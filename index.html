@@ -1,11 +1,14 @@
-<!-- 引用 artitalk -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/artitalk"></script>
-<!-- 存放说说的容器 -->
-<div id="artitalk_main"></div>
-<script>
-new Artitalk({
-    serverURL: 'https://wyblog1.eu.org',
-    appId: 'QpullIKYaQZeDzPfznqiGQSQ-MdYXbMMI', 
-    appKey: 'n8V4CF5YC80GNDMXEq5sOywX' 
-})
-</script>
+
+<html>
+    <script src='browser.js'></script>
+    <script src='md5.js'></script>
+    <script src='showdown.min.js'></script>
+    <script src='main.js'></script>
+    <div id="artitalk_main"></div>
+    <script>
+    new Artitalk({
+        wokerDomain : "https://wyblog1.eu.org";  /*此项为必填项，value为cf worker分到的域名，若无自定义，默认格式为xxx.xxx.workers.dev*/
+        /*支持主版本的配置项*/
+    })
+    </script>
+</html>
