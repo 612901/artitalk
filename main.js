@@ -1231,8 +1231,7 @@ atEvery.prototype.seeContent=function(pageNum,option){
                     let id = oneAtJson.id;
                     let shuoshuoPerContent = oneAtJson.atContentHtml;
                     let contengMid = "<li><span class=\"shuoshuo_author_img\"><img  id='atAvatar"+id+"'  src=\"" + shuoAvatar + "\"class=\"artitalk_avatar gallery-group-img\" width=\"48\" height=\"48\"></span><span class=\"cbp_tmlabel\" id='atId"+id+"' >  " + shuoshuoPerContent + "</div><p class=\"shuoshuo_time\">" + "<span style=\"\"> " + " " + osSvg + atOs + "</span><span>&nbsp&nbsp" + timeSvg + resDate + " " + resTime + "" + "</span></li>";
-                    mid += contengMid;
-                })    
+                    mid += contengMid;    
                 originString = document.getElementById('ccontent').innerHTML;
                 originString = originString === ''?"<ul class=\"cbp_tmtimeline\" id=\"maina\">":originString;
                 originString = originString.replace(/(.*)<\/ul>/,'$1 ');
