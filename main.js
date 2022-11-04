@@ -1248,8 +1248,6 @@ atEvery.prototype.seeContent=function(pageNum,option){
         }
     })
     seeXhr.open("GET",workerDomain+"/"+String(pageNum+1)+"-"+String(pageSize),true)
-    seeXhr.send();
-
     // atEvery.prototype.atEditsave=function(id){
     //     fadeIn('lazy');
     //     let beginPreview = document.getElementById('preview');
