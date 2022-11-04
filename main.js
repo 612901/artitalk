@@ -1180,7 +1180,6 @@ atEvery.prototype.seeContent=function(pageNum,option){
                     // console.log(oneAtJson);
                     // console.log(pageNum);
                     // console.log(pageSize);
-                    let atOs = oneAtJson.userOs;
                     let osSvg="";
                     switch(atOs){
                         case "windows":
