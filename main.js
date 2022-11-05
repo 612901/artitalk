@@ -1239,7 +1239,6 @@ atEvery.prototype.seeContent=function(pageNum,option){
                 document.getElementById('readButton').innerHTML = '<center>已经到底了哦~</center>';
                 document.getElementById('readButton').style.opacity = '0.5';
             }
-        }
     })
     seeXhr.open("GET",workerDomain+"/"+String(pageNum+1)+"-"+String(pageSize),true)
     // atEvery.prototype.atEditsave=function(id){
