@@ -634,7 +634,6 @@ atEvery.prototype._init=function(){
             }
         })
         atLogin.open("GET",workerDomain+"/judge");
-        atLogin.send();
     }
     switchLogin.onclick=function(){
         document.getElementById("logw").innerHTML = "";
