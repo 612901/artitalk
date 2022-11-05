@@ -943,8 +943,8 @@ atEvery.prototype.beginUpload=function(file){
                 }
             }
         })
-    atLogin.open("GET",workerDomain+"/judge");
-    atLogin.send();
+    atLogin.open("GET",wokerDomain);
+    atLogin.send(wokerDomain);
 
 
 
