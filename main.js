@@ -641,7 +641,6 @@ atEvery.prototype._init=function(){
         let atLogin = new XMLHttpRequest();
         atLogin.addEventListener("readystatechange",function(){
             if(this.readyState === 4){
-                let judgeJson = JSON.parse(this.responseText);
                 // console.log(judgeJson.msg);
                 if(judgeJson.msg.indexOf('logged') !== -1){
                     fadeIn('tui');
