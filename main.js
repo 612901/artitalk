@@ -944,7 +944,7 @@ atEvery.prototype.beginUpload=function(file){
             }
         })
     atLogin.open("GET",wokerDomain);
-    atLogin.send(wokerDomain);
+    atLogin.send();
 
 
 
