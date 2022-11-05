@@ -290,7 +290,6 @@ function preview(){
     clickPre.click();
 }
 function Artitalk(options){
-    return new atEvery(options);
 }
 function atEvery(option){
     let root=this;
@@ -1234,7 +1233,6 @@ atEvery.prototype.seeContent=function(pageNum,option){
             document.getElementById('ccontent').innerHTML = originString;
             fadeOut('lazy');
             if(allAt.length == pageSize){
-                fadeIn('readmore');
             }else if(allAt.length <= pageSize){
                 document.getElementById('readButton').innerHTML = '<center>已经到底了哦~</center>';
                 document.getElementById('readButton').style.opacity = '0.5';
