@@ -1172,7 +1172,6 @@ atEvery.prototype.seeContent=function(pageNum,option){
     let originString = "";
     seeXhr.addEventListener("readystatechange",function(){
         if(this.readyState === 4){
-            let allAt = JSON.parse(this.response);
             if(this.status === 202){
                 originString = "<ul class=\"cbp_tmtimeline\" id=\"maina\"><li><span class=\"shuoshuo_author_img\"><img src=\"https://cdn.jsdelivr.net/gh/drew233/cdn/logol.png\" class=\"artitalk_avatar gallery-group-img\" width=\"48\" height=\"48\"></span><span class=\"cbp_tmlabel\"><p>" + text24 + "</p><p class=\"shuoshuo_time\"><span style=\"\"> 由Artitalk发表</span><span style=\"float:right;\"><svg t=\"1591350675688\"  viewBox=\"0 0 1025 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"28653\" width=\"10\" height=\"10\" style=\"display: inline\"></svg> 2020-04-10 20:35:25</span></p></span></li></ul>";
             }else{
@@ -1253,7 +1252,7 @@ atEvery.prototype.seeContent=function(pageNum,option){
         }
     })
     seeXhr.open("GET",workerDomain+"/"+String(pageNum+1)+"-"+String(pageSize),true)
-    seeXhr.send();
+    seeXhr.send()
 
     // atEvery.prototype.atEditsave=function(id){
     //     fadeIn('lazy');
